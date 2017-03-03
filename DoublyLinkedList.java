@@ -11,4 +11,6 @@ public class DoublyLinkedList{
     last = null;
     size = 0;
   }
+  private void add(Node e){
+  }
 }
