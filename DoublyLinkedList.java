@@ -27,4 +27,10 @@ public class DoublyLinkedList{
   }
   private void backward(){
   }
+  private int size(){
+    return size;
+  }
+  private boolean isEmpty(){
+    return false;
+  }  
 }
