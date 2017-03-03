@@ -15,7 +15,13 @@ public class DoublyLinkedList{
   }
   public boolean found(String name){
     return false;
-}
+  }
   private void remove(String name, Node p){
-}
+  }
+  public void destory(){
+  }
+  private String print(){
+    return " ";
+  }
+  
 }
