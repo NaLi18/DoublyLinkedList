@@ -15,4 +15,10 @@ public class Node{
     this.prev = null;
     this.next = null;
   }
+  public void setNext(Node node){ 
+    this.next = node;
+  }
+  public void setPrev(Node node){
+    this.prev = node;
+  }
 }
