@@ -23,5 +23,8 @@ public class DoublyLinkedList{
   private String print(){
     return " ";
   }
-  
+  private void forward(){
+  }
+  private void backward(){
+  }
 }
