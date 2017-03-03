@@ -13,4 +13,7 @@ public class DoublyLinkedList{
   }
   private void add(Node e){
   }
+  public boolean found(String name){
+    return false;
+}
 }
