@@ -27,4 +27,7 @@ public class Node{
   public Node getPrev(){
     return prev;
   }
+  public String valueOf(){
+    return " ";
+  }
 }
