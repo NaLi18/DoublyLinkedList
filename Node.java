@@ -21,4 +21,10 @@ public class Node{
   public void setPrev(Node node){
     this.prev = node;
   }
+  public Node getNext(){
+    return this.next;
+  }
+  public Node getPrev(){
+    return prev;
+  }
 }
