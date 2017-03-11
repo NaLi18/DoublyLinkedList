@@ -14,6 +14,9 @@ public class DoublyLinkedList{
   }
   private void add(Node e){
   }
+  private Node getEnd(){
+    return endNode;
+  }
   public boolean found(String name){
     return false;
   }
