@@ -9,6 +9,9 @@ public class DoublyLinkedList{
   }
   private void setRoot(Node first){
   }
+  private Node getRoot(){
+    return this.root;
+  }
   private void add(Node e){
   }
   public boolean found(String name){
