@@ -7,6 +7,8 @@ public class DoublyLinkedList{
     endNode = null;
     size = 0;
   }
+  private void setRoot(Node first){
+  }
   private void add(Node e){
   }
   public boolean found(String name){
