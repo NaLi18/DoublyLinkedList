@@ -1,14 +1,10 @@
 public class DoublyLinkedList{
-  private Node node;
-  private String str;
-  private Node first;
-  private Node last;
+  private Node root;
+  private Node endNode;
   private int size;
   public DoublyLinkedList(){
-    node = null;
-    str = " ";
-    first = null;
-    last = null;
+    root = null;
+    endNode = null;
     size = 0;
   }
   private void add(Node e){
