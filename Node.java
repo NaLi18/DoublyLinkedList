@@ -22,9 +22,12 @@ public class Node{
     return this.next;
   }
   public Node getPrev(){
-    return prev;
+    return this.prev;
   }
-  public String valueOf(){
-    return " ";
+  public String getValue(){
+    return this.str;
   }
+  public void setValue(String x){
+    this.str = x;
+}
 }
