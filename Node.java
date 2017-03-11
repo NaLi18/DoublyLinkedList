@@ -29,5 +29,8 @@ public class Node{
   }
   public void setValue(String x){
     this.str = x;
-}
+  }
+  public void print(){
+    System.out.println(this.str + " ");
+  }
 }
