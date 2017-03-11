@@ -8,6 +8,8 @@ public class DoublyLinkedList{
     size = 0;
   }
   private void setRoot(Node first){
+    this.root = first;
+    this.size = 1;
   }
   private Node getRoot(){
     return this.root;
