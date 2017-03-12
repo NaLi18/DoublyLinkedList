@@ -73,6 +73,14 @@ public class DoublyLinkedList{
     size--;
   }
   public void destory(){
+    Node temp1 = root.getNext();
+    Node temp2 = endNode.getPrev();
+    for(int i = 0; i<this.size -1;i++){
+      temp2.setNext(null);
+      temp2 = temp2.getPrev();
+      temp1.setPrev(null);
+      temp1 = temp1.getNext();
+    }
   }
   private String print(){
     return " ";
