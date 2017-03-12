@@ -85,6 +85,11 @@ public class DoublyLinkedList{
   private void forward(){
   }
   private void backward(){
+    Node temp = endNode;
+    while(temp.getPrev()!= null){
+      temp.print();
+      temp = temp.getPrev();
+    }
   }
   private int size(){
     return size;
