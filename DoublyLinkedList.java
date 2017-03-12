@@ -82,9 +82,6 @@ public class DoublyLinkedList{
       temp1 = temp1.getNext();
     }
   }
-  private String print(){
-    return " ";
-  }
   private void forward(){
   }
   private void backward(){
