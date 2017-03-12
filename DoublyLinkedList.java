@@ -65,7 +65,12 @@ public class DoublyLinkedList{
     }
     return temp;
   }
-  private void remove(String name, Node p){
+  private void remove(Node node){
+    Node temp1 = node.getNext();
+    Node temp2 = node.getPrev();
+    temp1.setNext(temp2);
+    temp2.setPrev(temp1);
+    size--;
   }
   public void destory(){
   }
