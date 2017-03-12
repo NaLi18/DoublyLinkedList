@@ -14,7 +14,37 @@ public class DoublyLinkedList{
   private Node getRoot(){
     return this.root;
   }
-  private void add(Node e){
+  private void add(int index, String str){
+    Node newNode = new Node(str);
+    
+    if(index > this.size)
+      System.out.println("Index" + index + "doesn't exist");
+    else {
+      if(this.isEmpty()){
+        this.root = newNode;
+        this.endNode = root;
+      }
+      //add to the fornt of node list
+      else if (index == 0) {
+        newNode.setNext(root);
+        this.root = newNode;
+      }
+      //add to the end of node list
+      else if(index == this.size){
+       Node currentNode = this.getEnd();
+        currentNode.setNext(newNode);
+      }
+      //add to the middle of node list
+      else{
+        Node temp = this.root;
+        for(int i = 0; i < index - 1; i++) {
+          temp = temp.getNext();
+        }
+        newNode.setNext(temp.getNext());
+        newNode.setPrev(temp.getPrev());
+      }
+      size++;
+  }
   }
   private Node getEnd(){
     return endNode;
