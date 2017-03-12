@@ -37,6 +37,6 @@ public class DoublyLinkedList{
     return size;
   }
   private boolean isEmpty(){
-    return false;
+    return this.root==null;
   }  
 }
