@@ -49,8 +49,21 @@ public class DoublyLinkedList{
   private Node getEnd(){
     return endNode;
   }
-  public boolean found(String name){
-    return false;
+  public Node found(String str){
+   Node temp = null;
+    if(isEmpty())
+      return null;
+    else{
+      temp = root;
+      while(temp.getNext()!= null){
+        if(temp.getValue().compareTo(str) == 0)
+          return temp;
+        else{
+          temp = temp.getNext();
+        }
+      }
+    }
+    return temp;
   }
   private void remove(String name, Node p){
   }
