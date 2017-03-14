@@ -7,14 +7,14 @@ public class DoublyLinkedList{
     endNode = null;
     size = 0;
   }
-  private void setRoot(Node first){
+  public void setRoot(Node first){
     this.root = first;
     this.size = 1;
   }
-  private Node getRoot(){
+  public Node getRoot(){
     return this.root;
   }
-  private void add(int index, String str){
+  public void add(int index, String str){
     Node newNode = new Node(str);
     
     if(index > this.size)
@@ -77,7 +77,7 @@ public class DoublyLinkedList{
       }
   }
   }
-  private Node getEnd(){
+  public Node getEnd(){
     Node temp = root;
     while(temp.getNext()!= null)
       temp = temp .getNext();
@@ -108,7 +108,7 @@ public class DoublyLinkedList{
     }
     return temp;
     }
-  private void remove(Node node){
+  public void remove(Node node){
     Node temp1 = node.getNext();
     Node temp2 = node.getPrev();
     temp1.setNext(temp2);
@@ -125,7 +125,7 @@ public class DoublyLinkedList{
       temp1 = temp1.getNext();
     }
   }
-  private void forward(){
+  public void forward(){
     Node temp = root;
     while(temp.getNext()!= null){
       temp.print();
@@ -133,7 +133,7 @@ public class DoublyLinkedList{
     }
     temp.print();
   }
-  private void backward(){
+  public void backward(){
     Node temp = endNode;
     while(temp.getPrev()!= null){
       temp.print();
@@ -141,7 +141,7 @@ public class DoublyLinkedList{
     }
     temp.print();
   }
-  private int size(){
+  public int size(){
     return this.size;
   }
   private boolean isEmpty(){
