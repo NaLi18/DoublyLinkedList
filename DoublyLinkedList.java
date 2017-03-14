@@ -52,6 +52,31 @@ public class DoublyLinkedList{
       size++;
   }
   }
+  public void insert(String str){
+    Node newNode = new Node(str);
+    Node temp = root;
+    if(this.isEmpty()){
+        this.root = newNode;
+        this.endNode = root;
+      }
+    else
+    {
+      while(temp.getValue().compareTo(str)<0 && temp.getNext() != null)
+          temp = temp.getNext();
+      size++;
+      if(temp.getNext()==null){
+        temp.setNext(newNode);
+        newNode.setPrev(temp);
+        endNode= newNode;
+      }
+      else{
+        newNode.setNext(temp);
+        temp.getPrev().setNext(newNode);
+        newNode.setPrev(temp.getPrev());
+        temp.setPrev(newNode);
+      }
+  }
+  }
   private Node getEnd(){
     Node temp = root;
     while(temp.getNext()!= null)
