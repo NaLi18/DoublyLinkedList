@@ -32,8 +32,10 @@ public class DoublyLinkedList{
       }
       //add to the end of node list
       else if(index == this.size){
-       Node currentNode = this.getEnd();
+        Node currentNode = this.getEnd();
         currentNode.setNext(newNode);
+        newNode.setPrev(currentNode);
+        endNode = newNode;
       }
       //add to the middle of node list
       else{
