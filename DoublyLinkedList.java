@@ -85,21 +85,29 @@ public class DoublyLinkedList{
     return endNode;
   }
   public Node found(String str){
-   Node temp = null;
-    if(isEmpty())
+    Node temp = null;
+    if(isEmpty()){
+      System.out.println("The list is empty");
       return null;
+    }
+    else if(endNode.getValue().equals(str)){
+      temp = endNode;
+      System.out.println("Found "+ str +" in the end of list");
+    }
     else{
       temp = root;
-      while(temp.getNext()!= null){
-        if(temp.getValue().compareTo(str) == 0)
-          return temp;
-        else{
-          temp = temp.getNext();
-        }
+      while(temp.getNext()!= null&& temp.getValue().compareTo(str) != 0){ 
+        temp = temp.getNext();
       }
+      if(temp.getNext() == null){
+        System.out.println("the " +str+ " didn't exsit in the list");
+        temp = null;
+      }
+      else
+        System.out.println("Found "+ str +" in the list");
     }
     return temp;
-  }
+    }
   private void remove(Node node){
     Node temp1 = node.getNext();
     Node temp2 = node.getPrev();
