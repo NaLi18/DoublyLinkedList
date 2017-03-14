@@ -43,8 +43,11 @@ public class DoublyLinkedList{
         for(int i = 0; i < index - 1; i++) {
           temp = temp.getNext();
         }
-        newNode.setNext(temp.getNext());
-        newNode.setPrev(temp.getPrev());
+        Node temp2 = temp.getNext();
+        temp.setNext(newNode);
+        newNode.setPrev(temp);
+        newNode.setNext(temp2);
+        temp2.setPrev(newNode); 
       }
       size++;
   }
