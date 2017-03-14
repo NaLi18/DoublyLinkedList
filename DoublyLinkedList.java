@@ -142,7 +142,7 @@ public class DoublyLinkedList{
     temp.print();
   }
   private int size(){
-    return size;
+    return this.size;
   }
   private boolean isEmpty(){
     return this.root==null;
