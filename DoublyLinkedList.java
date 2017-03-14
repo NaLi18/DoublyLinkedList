@@ -47,6 +47,10 @@ public class DoublyLinkedList{
   }
   }
   private Node getEnd(){
+    Node temp = root;
+    while(temp.getNext()!= null)
+      temp = temp .getNext();
+    endNode = temp;
     return endNode;
   }
   public Node found(String str){
