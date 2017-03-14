@@ -42,12 +42,23 @@ public class Demo{
     linkedList.forward();
     linkedList.backward();
     */
-    
+    /*
      //test the insert method
     linkedList.insert("Lina");
     linkedList.forward();
     linkedList.insert("Tina");
     linkedList.forward();
+    */
     
+     //test the remove method
+    Node newNode1 = linkedList.found("Cat");
+    if(newNode1 != null)
+    linkedList.remove(newNode1);
+    linkedList.forward();
+    
+    Node newNode2 = linkedList.found("Tina");
+    if(newNode2 != null)
+    linkedList.remove(newNode2);
+    linkedList.forward();
   }
 }

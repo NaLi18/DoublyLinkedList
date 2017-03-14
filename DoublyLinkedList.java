@@ -85,7 +85,7 @@ public class DoublyLinkedList{
     return endNode;
   }
   public Node found(String str){
-    Node temp = null;
+     Node temp = null;
     if(isEmpty()){
       System.out.println("The list is empty");
       return null;
@@ -109,10 +109,10 @@ public class DoublyLinkedList{
     return temp;
     }
   public void remove(Node node){
-    Node temp1 = node.getNext();
+     Node temp1 = node.getNext();
     Node temp2 = node.getPrev();
-    temp1.setNext(temp2);
-    temp2.setPrev(temp1);
+    temp1.setPrev(temp2);
+    temp2.setNext(temp1);
     size--;
   }
   public void destory(){
