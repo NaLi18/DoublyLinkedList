@@ -37,12 +37,17 @@ public class Demo{
     linkedList.add(3,"Cat");
     linkedList.add(5, "Micheal");
     linkedList.add(6, "Bobby");
-    
+    /*
      //test the forward and backward method
     linkedList.forward();
     linkedList.backward();
+    */
     
-    
+     //test the insert method
+    linkedList.insert("Lina");
+    linkedList.forward();
+    linkedList.insert("Tina");
+    linkedList.forward();
     
   }
 }
