@@ -27,6 +27,7 @@ public class DoublyLinkedList{
       //add to the fornt of node list
       else if (index == 0) {
         newNode.setNext(root);
+        root.setPrev(newNode);
         this.root = newNode;
       }
       //add to the end of node list
