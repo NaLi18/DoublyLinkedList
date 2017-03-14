@@ -14,7 +14,7 @@ public class Demo{
     myOtherNode.print();
     */
     DoublyLinkedList linkedList = new DoublyLinkedList();
-    
+    /*
     //test the default constructor and the setRoot, getRoot and size methods
     System.out.println(linkedList);
     System.out.println(linkedList.getRoot());
@@ -22,6 +22,12 @@ public class Demo{
     linkedList.setRoot(new Node("Frank"));
     System.out.println(linkedList.getRoot());
     System.out.println(linkedList.size());
+    */
+    
+     //test the isEmpty is work
+     linkedList.setRoot(new Node("Carol"));
+     linkedList.forward();
+    
     
   }
 }
