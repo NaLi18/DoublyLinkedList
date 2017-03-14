@@ -131,6 +131,7 @@ public class DoublyLinkedList{
       temp.print();
       temp = temp.getNext();
     }
+    temp.print();
   }
   private void backward(){
     Node temp = endNode;
