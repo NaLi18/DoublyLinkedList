@@ -139,6 +139,7 @@ public class DoublyLinkedList{
       temp.print();
       temp = temp.getPrev();
     }
+    temp.print();
   }
   private int size(){
     return size;
