@@ -23,10 +23,25 @@ public class Demo{
     System.out.println(linkedList.getRoot());
     System.out.println(linkedList.size());
     */
-    
+    /*
      //test the isEmpty is work
      linkedList.setRoot(new Node("Carol"));
      linkedList.forward();
+    */
+    
+    // test add method of the DoublyLinkedList class
+    linkedList.add(0,"Alex");
+    linkedList.add(0,"Frank");
+    linkedList.add(0,"Peter");
+    linkedList.add(0,"Carol");
+    linkedList.add(3,"Cat");
+    linkedList.add(5, "Micheal");
+    linkedList.add(6, "Bobby");
+    
+     //test the forward and backward method
+    linkedList.forward();
+    linkedList.backward();
+    
     
     
   }
