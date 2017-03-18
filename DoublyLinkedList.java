@@ -162,6 +162,7 @@ public class DoublyLinkedList{
       endNode.setPrev(null);
       endNode = temp2;
     }
+    size = 1;
   }
   
   //The forward method that traverse the list forwards and print

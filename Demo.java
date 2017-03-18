@@ -65,5 +65,6 @@ public class Demo{
     linkedList.destory();
     linkedList.forward();
     linkedList.backward();
+    System.out.println(linkedList.size());
   }
 }
