@@ -1,7 +1,7 @@
 /*
- *The Node method
+ *The Node class
  * Name: Na Li
- * Lab: 2:45pm - 3:40pm
+ * Lab: 2:45pm - 3:40pm, Monday
  */
 public class Node{
   //Declare appropriate variables. 

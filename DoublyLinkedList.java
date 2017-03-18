@@ -1,7 +1,7 @@
 /*
- * The DoublyLinkedList method
+ * The DoublyLinkedList class
  * Name: Na Li
- * Lab: 2:45pm - 3:40pm
+ * Lab: 2:45pm - 3:40pm, Monday
  */
 public class DoublyLinkedList{
   

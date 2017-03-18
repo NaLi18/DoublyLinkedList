@@ -1,3 +1,8 @@
+/**
+ * The Demo method
+ * Name: Na Li
+ * Lab: 2:45pm - 3:40pm, Monday
+ */
 public class Demo{
   public static void main(String[] args){
     /*
@@ -28,7 +33,7 @@ public class Demo{
      linkedList.setRoot(new Node("Carol"));
      linkedList.forward();
     */
-    
+    /*
     // test add method of the DoublyLinkedList class
     linkedList.add(0,"Alex");
     linkedList.add(0,"Frank");
@@ -37,6 +42,7 @@ public class Demo{
     linkedList.add(3,"Cat");
     linkedList.add(5, "Micheal");
     linkedList.add(6, "Bobby");
+    */
     /*
      //test the forward and backward method
     linkedList.forward();
@@ -60,11 +66,13 @@ public class Demo{
     linkedList.remove(newNode2);
     linkedList.forward();
     */
+    /*
     //test the destory method
     System.out.println(linkedList.size());
     linkedList.destory();
     linkedList.forward();
     linkedList.backward();
     System.out.println(linkedList.size());
+    */
   }
 }
