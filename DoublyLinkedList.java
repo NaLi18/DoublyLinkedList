@@ -125,8 +125,8 @@ public class DoublyLinkedList{
     }
     for(int i = 0; i<this.size-1;i++){
       temp2 = endNode.getPrev();
-      root.setPrev(null);
-      root = temp2;
+      endNode.setPrev(null);
+      endNode = temp2;
     }
   }
   public void forward(){
