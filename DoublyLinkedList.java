@@ -150,39 +150,41 @@ public class DoublyLinkedList{
   
   // The destory method that delete/destroy the list
   public void destory(){
-    Node temp1 = null;
-    Node temp2 = null;
-    for(int i = 0; i<this.size-1;i++){
-      temp1 = root.getNext();
-      root.setNext(null);
-      root = temp1;
-    }
-    for(int i = 0; i<this.size-1;i++){
-      temp2 = endNode.getPrev();
-      endNode.setPrev(null);
-      endNode = temp2;
-    }
-    size = 1;
+      Node temp1 = root;
+    while(temp1.getNext() == null)
+      temp1 = null;
+    root = null;
+    size = 0;
   }
   
   //The forward method that traverse the list forwards and print
   public void forward(){
-    Node temp = root;
-    while(temp.getNext()!= null){
-      temp.print();
-      temp = temp.getNext();
-    }
-    temp.print();
+     Node temp = root;
+     if(isEmpty()){
+       System.out.println("The list is empty");
+     }
+     else{
+       while(temp.getNext()!= null){
+        temp.print();
+        temp = temp.getNext();
+     }
+     temp.print();
+     }
   }
   
   //The backward method that traverse the list backwards and print
   public void backward(){
     Node temp = endNode;
-    while(temp.getPrev()!= null){
-      temp.print();
-      temp = temp.getPrev();
+    if(isEmpty()){
+      System.out.println("The list is empty");
+    }
+    else{
+      while(temp.getPrev()!= null){
+        temp.print();
+        temp = temp.getPrev();
     }
     temp.print();
+    }
   }
   
   // return the size of the list
