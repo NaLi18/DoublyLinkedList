@@ -150,9 +150,6 @@ public class DoublyLinkedList{
   
   // The destory method that delete/destroy the list
   public void destory(){
-      Node temp1 = root;
-    while(temp1.getNext() == null)
-      temp1 = null;
     root = null;
     size = 0;
   }
